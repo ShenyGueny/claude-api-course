@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS account ID from an ARN string (e.g., 'arn:aws:s3:::my-bucket' or 'arn:aws:iam::123456789012:role/MyRole'). The function should return the account ID or None if not present."
+    "task": "Create a JSON configuration object for an AWS Lambda function that processes S3 events, with environment variables for a DynamoDB table name and CloudWatch log level",
+    "format": "json",
+    "solution_criteria": "Must include: Lambda function name, runtime specification, IAM role ARN, environment variables object with DynamoDB table name and log level keys, S3 event trigger configuration with bucket and event types (s3:ObjectCreated:*), and timeout setting"
   },
   {
-    "task": "Create a JSON object that represents an AWS IAM policy document allowing a principal to perform GetObject and PutObject actions on a specific S3 bucket named 'my-data-bucket'."
+    "task": "Write a Python function that takes an AWS S3 object key path and returns True if it matches the pattern for valid CloudTrail logs (accounts/ACCOUNT-ID/CloudTrail/REGION/YEAR/MONTH/DAY/)",
+    "format": "python",
+    "solution_criteria": "Must be a function that accepts a string parameter, validates the CloudTrail path structure using the specified format, returns a boolean, and handles edge cases like empty strings or malformed paths"
   },
   {
-    "task": "Write a regular expression that matches valid AWS S3 bucket names. S3 bucket names must be between 3 and 63 characters long, contain only lowercase letters, numbers, hyphens, and dots, start and end with a letter or number, and cannot contain consecutive hyphens or dots."
+    "task": "Create a regex pattern that matches valid AWS IAM role ARNs in the standard format (arn:aws:iam::ACCOUNT-ID:role/ROLE-NAME)",
+    "format": "regex",
+    "solution_criteria": "Must match valid IAM role ARNs with 12-digit account IDs and alphanumeric role names, reject invalid formats, handle role names with hyphens and underscores, and not match other resource types (users, policies, etc.)"
   }
 ]
