@@ -1,17 +1,32 @@
 [
   {
-    "task": "Create a JSON configuration object for an AWS Lambda function that processes S3 events, with environment variables for a DynamoDB table name and CloudWatch log level",
-    "format": "json",
-    "solution_criteria": "Must include: Lambda function name, runtime specification, IAM role ARN, environment variables object with DynamoDB table name and log level keys, S3 event trigger configuration with bucket and event types (s3:ObjectCreated:*), and timeout setting"
+    "prompt_inputs": {},
+    "solution_criteria": [
+      "Handles input without errors or timeouts",
+      "Maintains output quality and coherence despite input complexity"
+    ],
+    "task_description": "",
+    "scenario": "Testing with extremely long or complex input strings to assess performance and output quality under stress conditions"
   },
   {
-    "task": "Write a Python function that takes an AWS S3 object key path and returns True if it matches the pattern for valid CloudTrail logs (accounts/ACCOUNT-ID/CloudTrail/REGION/YEAR/MONTH/DAY/)",
-    "format": "python",
-    "solution_criteria": "Must be a function that accepts a string parameter, validates the CloudTrail path structure using the specified format, returns a boolean, and handles edge cases like empty strings or malformed paths"
+    "prompt_inputs": {},
+    "solution_criteria": [
+      "System handles empty/null inputs gracefully without crashing",
+      "Provides clear error message or default behavior when no input is provided",
+      "Returns a valid response structure even with missing data"
+    ],
+    "task_description": "",
+    "scenario": "Testing with empty or null input values to verify error handling and default behavior"
   },
   {
-    "task": "Create a regex pattern that matches valid AWS IAM role ARNs in the standard format (arn:aws:iam::ACCOUNT-ID:role/ROLE-NAME)",
-    "format": "regex",
-    "solution_criteria": "Must match valid IAM role ARNs with 12-digit account IDs and alphanumeric role names, reject invalid formats, handle role names with hyphens and underscores, and not match other resource types (users, policies, etc.)"
+    "prompt_inputs": {},
+    "solution_criteria": [
+      "Correctly parses and preserves all special characters (!, @, #, $, %, ^, &, *)",
+      "Handles Unicode symbols properly (\u00e9mojis: \ud83c\udfaf\ud83d\udcca\u2728, mathematical: \u2211\u222b\u221a, currency: \u20ac\u00a5\u20b9)",
+      "Maintains formatting codes structure (markdown: **bold**, _italic_, `code`; HTML: <tag>)",
+      "Identifies and reports any characters that cannot be processed or decoded"
+    ],
+    "task_description": "",
+    "scenario": "Testing with special characters, unicode symbols, and formatting codes to ensure proper parsing and handling of edge cases"
   }
 ]
