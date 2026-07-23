@@ -1,66 +1,53 @@
 [
   {
     "prompt_inputs": {
-      "Height": "180 cm",
-      "Weight": "70 kg",
-      "Goal": "endurance training for marathon",
-      "Dietary Restrictions": "none"
+      "content": "This study employs a novel CRISPR-Cas9 multiplexing approach to investigate epigenetic modifications in heterochromatin regions. We utilized chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) to map H3K9me3 and H3K27me3 histone marks across the genome. Our findings reveal that DNA methyltransferase (DNMT) inhibition significantly reduces heterochromatin spreading through altered nucleosome positioning. Additionally, we integrated RNA-seq data with ATAC-seq analysis to assess chromatin accessibility changes, discovering that PRC2 complex mutations correlate with increased transcriptional variance in developmental genes. These results suggest a mechanistic link between DNA methylation, histone modifications, and three-dimensional chromatin architecture in regulating gene silencing pathways."
     },
     "solution_criteria": [
-      "Meal plan totals 2,800-3,200 calories (appropriate for marathon training)",
-      "Carbohydrates comprise 55-65% of total calories to support endurance performance",
-      "Protein comprises 12-15% of total calories for recovery",
-      "Includes specific meals and snacks distributed throughout the day"
+      "Extracts domain-specific terminology and techniques (e.g., CRISPR-Cas9, ChIP-seq, ATAC-seq, RNA-seq)",
+      "Identifies specialized molecular biology topics and molecular mechanisms (e.g., epigenetic modifications, heterochromatin, histone marks, chromatin accessibility)",
+      "Captures acronyms and their conceptual topics (e.g., DNMT, PRC2, H3K9me3, H3K27me3)",
+      "Returns results as a valid JSON array of strings"
     ],
-    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
-    "scenario": "Testing with an endurance athlete (marathon runner) with high caloric needs, normal BMI, and no dietary restrictions to verify appropriate macro distribution and energy density"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a highly technical passage containing domain-specific jargon, acronyms, and specialized terminology to assess handling of field-specific topics"
   },
   {
     "prompt_inputs": {
-      "Height": "178 cm",
-      "Weight": "82 kg",
-      "Goal": "muscle gain for strength training",
-      "Dietary Restrictions": "vegetarian, nut allergy"
+      "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in correcting mutations associated with sickle cell disease in patient-derived hematopoietic stem cells. The technique involves precise excision of mutated \u03b2-globin sequences and subsequent insertion of corrected genetic material, resulting in restored hemoglobin production. Clinical trials have shown sustained engraftment rates exceeding 90%, with patients experiencing significant reduction in vaso-occlusive crises and transfusion dependency. However, off-target editing effects remain a critical concern, as unintended DNA modifications in non-target genomic regions could introduce secondary mutations. Regulatory frameworks governing therapeutic genome modification continue to evolve, reflecting ongoing debates about safety thresholds and equitable access to treatment."
     },
     "solution_criteria": [
-      "Meal plan provides adequate protein (minimum 1.6g per kg body weight) from non-nut vegetarian sources",
-      "All meals comply with vegetarian and nut-free requirements",
-      "Plan spans a full day with breakfast, lunch, dinner, and snacks",
-      "Meals support strength training performance and muscle gain goals"
+      "Extracts all explicitly mentioned topics (CRISPR-Cas9, gene editing, sickle cell disease, hemoglobin production, clinical trials, off-target effects, regulatory frameworks)",
+      "Identifies implicit/inferred topics derived from context (genetic medicine, therapeutic applications, patient outcomes, safety concerns, healthcare equity)",
+      "Formats output as a valid JSON array of strings",
+      "Avoids including overly general terms while capturing substantive domain-specific concepts"
     ],
-    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
-    "scenario": "Testing with a strength athlete (weightlifter) with multiple dietary restrictions (vegetarian, nut allergy) to ensure protein sources are alternative-based and meal plan remains performance-optimized"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing implicit and explicit topics where some topics require inference from context rather than direct mention"
   },
   {
     "prompt_inputs": {
-      "Height": "175 cm",
-      "Weight": "105 kg",
-      "Goal": "weight loss while maintaining athletic performance",
-      "Dietary Restrictions": "low sodium (under 2000mg daily), diabetic-friendly (low glycemic index), no shellfish allergy"
+      "content": "This study employs a mixed-methods approach integrating quantitative survey data with qualitative ethnographic observation to examine social capital formation in post-industrial communities. Drawing on Bourdieu's theory of cultural reproduction and Coleman's rational choice framework, we analyze how institutional trust, bridging social networks, and symbolic capital interact to influence civic participation. Our multilevel regression models reveal significant variance at both individual and community levels, while thematic coding of interview transcripts identifies mechanisms through which economic precarity shapes bonding versus bridging ties. These findings contribute to contemporary debates in economic sociology and urban studies regarding the relationship between deindustrialization, community resilience, and the reproduction of social inequality across generations."
     },
     "solution_criteria": [
-      "Meal plan includes 6 meals/snacks distributed throughout the day with appropriate macronutrient balance for performance",
-      "All meals comply with low sodium (<2000mg total daily) and diabetic-friendly guidelines (low glycemic index carbohydrates)",
-      "Plan creates a moderate caloric deficit suitable for weight loss while supporting athletic training",
-      "No shellfish ingredients included and all meals are practical and specific with quantities"
+      "Captures major theoretical frameworks (Bourdieu, Coleman, social capital theory)",
+      "Identifies methodological approaches (mixed-methods, quantitative, qualitative, ethnography)",
+      "Includes key concepts and variables (institutional trust, social networks, civic participation, economic precarity)",
+      "Recognizes interdisciplinary fields (economic sociology, urban studies)"
     ],
-    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
-    "scenario": "Testing with an athlete with an unusually high BMI and specific medical dietary needs (low sodium, diabetic-friendly) to confirm the plan balances performance nutrition with health constraints"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage from social sciences that includes abstract concepts, methodologies, and interdisciplinary references to evaluate topic granularity"
   },
   {
     "prompt_inputs": {
-      "Height": "160 cm",
-      "Weight": "48 kg",
-      "Goal": "maintain performance and energy for training",
-      "Dietary Restrictions": "vegan"
+      "content": "This study examines neuroplasticity in the context of cognitive rehabilitation following traumatic brain injury (TBI). We investigate how neuroplasticity mechanisms\u2014including synaptic reorganization, axonal sprouting, and dendritic remodeling\u2014facilitate recovery of executive function in TBI patients. Our findings demonstrate that intensive cognitive training leverages neuroplasticity to restore prefrontal cortex function, while simultaneously engaging compensatory neural pathways in the parietal lobe. We also explore how pharmacological interventions targeting brain-derived neurotrophic factor (BDNF) enhance neuroplasticity-dependent recovery. The interplay between cognitive rehabilitation intensity, neuroplasticity capacity, and individual genetic factors (BDNF polymorphisms) determines functional outcomes. Additionally, we address how age-related decline in neuroplasticity affects rehabilitation efficacy in older TBI populations."
     },
     "solution_criteria": [
-      "All meals are vegan with no animal products",
-      "Meal plan includes adequate protein sources (legumes, tofu, nuts, seeds) to support muscle maintenance",
-      "Micronutrients critical for vegans are addressed (B12, iron, calcium, omega-3s)",
-      "Total daily caloric intake is appropriate for a lightweight athlete (approximately 1800-2000 calories)"
+      "Distinguishes between main themes (neuroplasticity, cognitive rehabilitation, TBI recovery) and sub-themes (synaptic reorganization, executive function, BDNF, age-related factors)",
+      "Avoids redundant or overly granular topic extraction while capturing hierarchically related concepts",
+      "Identifies topics at appropriate levels of abstraction without conflating distinct but related concepts"
     ],
-    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
-    "scenario": "Testing with a lightweight sport athlete (gymnast/dancer) with low caloric requirements and vegan dietary restrictions to ensure nutritionally complete meals at reduced portions without compromising micronutrients"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing overlapping or hierarchical topics where main themes and sub-themes are intermingled to evaluate topic distinction and organization"
   }
 ]

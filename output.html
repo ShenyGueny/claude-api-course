@@ -117,7 +117,7 @@
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">8.8 / 10</div>
+                    <div class="stat-value">8.0 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
@@ -140,422 +140,47 @@
             <tbody>
     
             <tr>
-                <td>Testing with a strength athlete (weightlifter) with multiple dietary restrictions (vegetarian, nut allergy) to ensure protein sources are alternative-based and meal plan remains performance-optimized</td>
-                <td class="prompt-inputs"><strong>Height:</strong> 178 cm<br><strong>Weight:</strong> 82 kg<br><strong>Goal:</strong> muscle gain for strength training<br><strong>Dietary Restrictions:</strong> vegetarian, nut allergy</td>
-                <td class="criteria">• Meal plan provides adequate protein (minimum 1.6g per kg body weight) from non-nut vegetarian sources<br>• All meals comply with vegetarian and nut-free requirements<br>• Plan spans a full day with breakfast, lunch, dinner, and snacks<br>• Meals support strength training performance and muscle gain goals</td>
-                <td class="output"><pre># 1-Day Muscle Gain Meal Plan
-## For 178cm, 82kg Athlete (Vegetarian & Nut-Free)
-
----
-
-## Daily Nutrition Targets
-- **Calories: 3,200 kcal**
-- **Protein: 175g** (22% of calories)
-- **Carbohydrates: 400g** (50% of calories)
-- **Fat: 107g** (30% of calories)
-
----
-
-## MEAL SCHEDULE
-
-### **BREAKFAST - 7:00 AM**
-*Calories: 650 | P: 35g | C: 85g | F: 15g*
-
-- Oatmeal (rolled oats): **90g** (dry)
-- Banana: **150g**
-- Whole milk: **240ml**
-- Honey: **25g**
-- Sunflower seed butter: **20g**
-
----
-
-### **MID-MORNING SNACK - 10:00 AM**
-*Calories: 400 | P: 25g | C: 50g | F: 12g*
-
-- Greek yogurt (plain, full-fat): **200g**
-- Granola (store-bought): **50g**
-- Blueberries (fresh): **80g**
-- Honey: **15g**
-
----
-
-### **LUNCH - 1:00 PM**
-*Calories: 700 | P: 45g | C: 80g | F: 20g*
-
-- Paneer (cottage cheese): **200g** (grilled)
-- Basmati rice (cooked): **200g**
-- Spinach: **150g** (sautéed)
-- Olive oil: **15ml**
-- Salt & pepper to taste
-
----
-
-### **PRE-WORKOUT SNACK - 3:30 PM**
-*Calories: 350 | P: 20g | C: 60g | F: 5g*
-
-- White bread: **80g**
-- Peanut butter (sunflower seed alternative): **20g**
-- Banana: **120g**
-- Honey: **20g**
-
----
-
-### **DINNER - 7:00 PM**
-*Calories: 700 | P: 50g | C: 85g | F: 20g*
-
-- Lentils (cooked): **250g**
-- Sweet potato: **280g** (roasted)
-- Broccoli: **150g** (steamed)
-- Coconut oil: **15ml**
-- Lemon juice to taste
-
----
-
-### **EVENING SNACK - 9:30 PM**
-*Calories: 400 | P: 20g | C: 40g | F: 35g*
-
-- Whole milk: **240ml**
-- Whey protein powder (vanilla): **30g**
-- Seeds mix (sunflower & pumpkin): **40g**
-- Dates (pitted): **50g**
-
----
-
-## DAILY TOTALS
-- **Calories: 3,200**
-- **Protein: 195g**
-- **Carbohydrates: 400g**
-- **Fat: 107g**
-
----
-
-## HYDRATION
-- **Water: 3.5-4 liters throughout the day**
-- Drink 500ml before, during, and after workouts
-
-## NOTES
-✓ All foods are vegetarian (no meat or fish)  
-✓ No tree nuts or peanuts—sunflower seed butter used as alternative  
-✓ High protein from dairy, legumes, and protein powder  
-✓ Carbs strategically timed around workouts for energy and recovery  
-✓ Sufficient calories to support muscle gain at 82kg bodyweight  
-✓ Adjust portion sizes if actual weight changes  
-✓ Consider taking a vitamin B12 supplement for long-term vegetarian diet health</pre></td>
-                <td class="score-col"><span class="score score-high">9</span></td>
-                <td class="reasoning">The solution comprehensively satisfies all mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and detailed meal specifications with portions and timing. It successfully addresses both dietary restrictions (vegetarian and nut-free) while providing adequate protein (195g vs. 131.2g minimum) to support muscle gain. The plan spans a full day with six eating occasions strategically distributed. All secondary criteria are met: meals support strength training through carb timing and high protein intake, and the plan is practical and well-documented. Minor weaknesses exist in meal timing optimization and workout context, but these do not detract from meeting the stated criteria.</td>
+                <td>Testing with a passage containing implicit and explicit topics where some topics require inference from context rather than direct mention</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in correcting mutations associated with sickle cell disease in patient-derived hematopoietic stem cells. The technique involves precise excision of mutated β-globin sequences and subsequent insertion of corrected genetic material, resulting in restored hemoglobin production. Clinical trials have shown sustained engraftment rates exceeding 90%, with patients experiencing significant reduction in vaso-occlusive crises and transfusion dependency. However, off-target editing effects remain a critical concern, as unintended DNA modifications in non-target genomic regions could introduce secondary mutations. Regulatory frameworks governing therapeutic genome modification continue to evolve, reflecting ongoing debates about safety thresholds and equitable access to treatment.</td>
+                <td class="criteria">• Extracts all explicitly mentioned topics (CRISPR-Cas9, gene editing, sickle cell disease, hemoglobin production, clinical trials, off-target effects, regulatory frameworks)<br>• Identifies implicit/inferred topics derived from context (genetic medicine, therapeutic applications, patient outcomes, safety concerns, healthcare equity)<br>• Formats output as a valid JSON array of strings<br>• Avoids including overly general terms while capturing substantive domain-specific concepts</td>
+                <td class="output"><pre>```json
+["CRISPR-Cas9 gene editing", "sickle cell disease", "hematopoietic stem cells", "β-globin mutation correction", "hemoglobin production", "clinical trials", "engraftment rates", "vaso-occlusive crises", "transfusion dependency", "off-target editing effects", "genome modification", "regulatory frameworks", "treatment access"]
+```</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. However, it falls short on the secondary criteria regarding implicit/inferred topics. The passage explicitly discusses 'safety thresholds' and 'equitable access to treatment' in the final sentence, which should be captured as topics. Additionally, the criteria specifically request identification of implicit topics like 'safety concerns,' 'patient outcomes,' 'therapeutic applications,' and 'healthcare equity,' which are contextually present but not extracted. The solution captures approximately 70% of the substantive topics but misses important thematic elements that constitute meaningful topics in the scholarly context.</td>
             </tr>
         
             <tr>
-                <td>Testing with an endurance athlete (marathon runner) with high caloric needs, normal BMI, and no dietary restrictions to verify appropriate macro distribution and energy density</td>
-                <td class="prompt-inputs"><strong>Height:</strong> 180 cm<br><strong>Weight:</strong> 70 kg<br><strong>Goal:</strong> endurance training for marathon<br><strong>Dietary Restrictions:</strong> none</td>
-                <td class="criteria">• Meal plan totals 2,800-3,200 calories (appropriate for marathon training)<br>• Carbohydrates comprise 55-65% of total calories to support endurance performance<br>• Protein comprises 12-15% of total calories for recovery<br>• Includes specific meals and snacks distributed throughout the day</td>
-                <td class="output"><pre># 1-Day Endurance Training Meal Plan
-## For 180cm, 70kg Athlete (Marathon Training)
-
----
-
-## Daily Nutrition Targets
-- **Calories: 2,800 kcal**
-- **Protein: 112g** (16% of calories)
-- **Carbohydrates: 420g** (60% of calories)
-- **Fat: 78g** (25% of calories)
-
----
-
-## MEAL SCHEDULE
-
-### **BREAKFAST - 7:00 AM**
-*Calories: 550 | P: 18g | C: 85g | F: 14g*
-
-- Oatmeal (dry): **80g**
-- Whole milk: **240ml**
-- Banana: **150g**
-- Honey: **20g**
-- Almonds: **25g**
-
----
-
-### **MID-MORNING SNACK - 10:00 AM**
-*Calories: 320 | P: 12g | C: 55g | F: 6g*
-
-- Whole wheat bread: **60g** (2 slices)
-- Peanut butter: **20g**
-- Apple: **180g**
-
----
-
-### **LUNCH - 1:00 PM**
-*Calories: 650 | P: 42g | C: 75g | F: 18g*
-
-- Chicken breast (grilled): **180g**
-- Brown rice (cooked): **200g**
-- Spinach (steamed): **120g**
-- Olive oil: **15ml**
-- Lemon juice to taste
-
----
-
-### **PRE-WORKOUT SNACK - 3:30 PM**
-*Calories: 380 | P: 15g | C: 65g | F: 6g*
-
-- Sweet potato: **200g** (baked)
-- Greek yogurt (plain): **150g**
-- Berries (mixed): **100g**
-
----
-
-### **DINNER - 7:00 PM**
-*Calories: 650 | P: 48g | C: 78g | F: 18g*
-
-- Salmon fillet (baked): **180g**
-- White potato (boiled): **250g**
-- Broccoli (steamed): **150g**
-- Olive oil: **15ml**
-- Sea salt & pepper to taste
-
----
-
-### **EVENING SNACK - 9:30 PM**
-*Calories: 250 | P: 20g | C: 22g | F: 16g*
-
-- Greek yogurt (plain): **200g**
-- Granola: **40g**
-- Honey: **15g**
-
----
-
-## DAILY TOTALS
-- **Calories: 2,800**
-- **Protein: 112g**
-- **Carbohydrates: 420g**
-- **Fat: 78g**
-
----
-
-## HYDRATION
-- **Water: 3.5-4 liters throughout the day**
-- Drink 500ml upon waking
-- 250ml with each meal
-- 500ml before, during (if >90 min), and after runs
-- Sports drink (6-8% carbs) during long runs (>90 minutes)
-
-## NOTES
-✓ High carbohydrate ratio supports endurance training and glycogen replenishment  
-✓ Moderate protein for muscle recovery without excess bulk  
-✓ Meals timed to support training schedule and energy availability  
-✓ Complex carbs emphasize sustained energy for distance running  
-✓ Hydration prioritized for sweat loss during endurance work  
-✓ Adjust portions if training volume increases or body weight changes</pre></td>
-                <td class="score-col"><span class="score score-high">9</span></td>
-                <td class="reasoning">The solution comprehensively meets all mandatory requirements with clear daily totals, macronutrient breakdowns, and detailed meal specifications with portions and timing. The macronutrient percentages align well with endurance training needs, particularly the 60% carbohydrate emphasis. The caloric target of 2,800 kcal is technically within the 2,800-3,200 range but sits at the minimum threshold, which could be a limitation for some athletes. The meal plan is well-structured and practical, though it lacks some nuance around training-specific adjustments. All secondary criteria are met effectively.</td>
+                <td>Testing with a passage from social sciences that includes abstract concepts, methodologies, and interdisciplinary references to evaluate topic granularity</td>
+                <td class="prompt-inputs"><strong>content:</strong> This study employs a mixed-methods approach integrating quantitative survey data with qualitative ethnographic observation to examine social capital formation in post-industrial communities. Drawing on Bourdieu's theory of cultural reproduction and Coleman's rational choice framework, we analyze how institutional trust, bridging social networks, and symbolic capital interact to influence civic participation. Our multilevel regression models reveal significant variance at both individual and community levels, while thematic coding of interview transcripts identifies mechanisms through which economic precarity shapes bonding versus bridging ties. These findings contribute to contemporary debates in economic sociology and urban studies regarding the relationship between deindustrialization, community resilience, and the reproduction of social inequality across generations.</td>
+                <td class="criteria">• Captures major theoretical frameworks (Bourdieu, Coleman, social capital theory)<br>• Identifies methodological approaches (mixed-methods, quantitative, qualitative, ethnography)<br>• Includes key concepts and variables (institutional trust, social networks, civic participation, economic precarity)<br>• Recognizes interdisciplinary fields (economic sociology, urban studies)</td>
+                <td class="output"><pre>```json
+["social capital formation", "post-industrial communities", "cultural reproduction", "rational choice framework", "institutional trust", "bridging social networks", "symbolic capital", "civic participation", "multilevel regression models", "bonding ties", "economic sociology", "urban studies", "deindustrialization", "community resilience", "social inequality"]
+```</pre></td>
+                <td class="score-col"><span class="score score-medium">7</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. It performs well on secondary criteria by capturing most major concepts, theoretical frameworks, and interdisciplinary fields. However, it has notable gaps in methodological approaches (missing explicit terms like 'mixed-methods', 'quantitative', 'qualitative', 'ethnography', 'thematic coding') and omits 'economic precarity', which is explicitly mentioned as a key variable. The inclusion of theorist names as topics is debatable but would strengthen alignment with the 'major theoretical frameworks' criterion.</td>
             </tr>
         
             <tr>
-                <td>Testing with an athlete with an unusually high BMI and specific medical dietary needs (low sodium, diabetic-friendly) to confirm the plan balances performance nutrition with health constraints</td>
-                <td class="prompt-inputs"><strong>Height:</strong> 175 cm<br><strong>Weight:</strong> 105 kg<br><strong>Goal:</strong> weight loss while maintaining athletic performance<br><strong>Dietary Restrictions:</strong> low sodium (under 2000mg daily), diabetic-friendly (low glycemic index), no shellfish allergy</td>
-                <td class="criteria">• Meal plan includes 6 meals/snacks distributed throughout the day with appropriate macronutrient balance for performance<br>• All meals comply with low sodium (<2000mg total daily) and diabetic-friendly guidelines (low glycemic index carbohydrates)<br>• Plan creates a moderate caloric deficit suitable for weight loss while supporting athletic training<br>• No shellfish ingredients included and all meals are practical and specific with quantities</td>
-                <td class="output"><pre># 1-Day Weight Loss Meal Plan
-## For 175cm, 105kg Athlete (Low Sodium, Diabetic-Friendly, No Shellfish)
-
----
-
-## Daily Nutrition Targets
-- **Calories: 2,400 kcal**
-- **Protein: 180g** (30% of calories)
-- **Carbohydrates: 240g** (40% of calories)
-- **Fat: 80g** (30% of calories)
-- **Sodium: Under 2,000mg**
-
----
-
-## MEAL SCHEDULE
-
-### **BREAKFAST - 7:00 AM**
-*Calories: 420 | P: 35g | C: 45g | F: 12g | Na: 280mg*
-
-- Egg whites: **120g** (3 large eggs)
-- Steel-cut oatmeal (unsalted): **45g** (dry)
-- Blueberries: **100g**
-- Cinnamon: **2g**
-- Water: **240ml**
-
----
-
-### **MID-MORNING SNACK - 10:00 AM**
-*Calories: 200 | P: 30g | C: 15g | F: 4g | Na: 95mg*
-
-- Grilled chicken breast (no salt added): **150g**
-- Apple (Granny Smith): **180g**
-
----
-
-### **LUNCH - 1:00 PM**
-*Calories: 520 | P: 50g | C: 55g | F: 15g | Na: 310mg*
-
-- Baked salmon fillet (unsalted): **180g**
-- Brown rice (cooked, unsalted): **120g**
-- Spinach (steamed, no added salt): **150g**
-- Extra virgin olive oil: **10ml**
-- Lemon juice: **15ml**
-
----
-
-### **PRE-WORKOUT SNACK - 3:30 PM**
-*Calories: 300 | P: 25g | C: 40g | F: 5g | Na: 140mg*
-
-- Turkey breast (low-sodium, unsalted): **120g**
-- Sweet potato (baked, no salt): **150g**
-- Green beans (steamed): **100g**
-
----
-
-### **DINNER - 7:00 PM**
-*Calories: 520 | P: 55g | C: 50g | F: 18g | Na: 280mg*
-
-- Lean ground turkey (93/7, unsalted): **200g** (cooked)
-- Quinoa (cooked, unsalted): **100g**
-- Broccoli (steamed): **200g**
-- Avocado oil: **12ml**
-- Black pepper to taste
-
----
-
-### **EVENING SNACK - 9:30 PM**
-*Calories: 240 | P: 15g | C: 35g | F: 6g | Na: 85mg*
-
-- Plain Greek yogurt (0% fat, unsalted): **150g**
-- Pear: **150g**
-- Almonds (unsalted): **20g**
-
----
-
-## DAILY TOTALS
-- **Calories: 2,400**
-- **Protein: 180g**
-- **Carbohydrates: 240g**
-- **Fat: 80g**
-- **Sodium: 1,190mg** ✓ (under 2,000mg limit)
-
----
-
-## HYDRATION
-- **Water: 3.5-4 liters throughout the day**
-- Drink 500ml upon waking, before/after workouts
-- Herbal tea (unsalted) acceptable for variety
-
-## NOTES
-✓ All foods are low glycemic index or have minimal sodium  
-✓ No shellfish included  
-✓ High protein supports muscle preservation during weight loss  
-✓ Carbs distributed evenly; heavier intake around training  
-✓ Avoid added salt; use herbs, spices, and lemon for flavor  
-✓ Monitor progress weekly; adjust calories by ±200kcal if needed  
-✓</pre></td>
+                <td>Testing with a highly technical passage containing domain-specific jargon, acronyms, and specialized terminology to assess handling of field-specific topics</td>
+                <td class="prompt-inputs"><strong>content:</strong> This study employs a novel CRISPR-Cas9 multiplexing approach to investigate epigenetic modifications in heterochromatin regions. We utilized chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) to map H3K9me3 and H3K27me3 histone marks across the genome. Our findings reveal that DNA methyltransferase (DNMT) inhibition significantly reduces heterochromatin spreading through altered nucleosome positioning. Additionally, we integrated RNA-seq data with ATAC-seq analysis to assess chromatin accessibility changes, discovering that PRC2 complex mutations correlate with increased transcriptional variance in developmental genes. These results suggest a mechanistic link between DNA methylation, histone modifications, and three-dimensional chromatin architecture in regulating gene silencing pathways.</td>
+                <td class="criteria">• Extracts domain-specific terminology and techniques (e.g., CRISPR-Cas9, ChIP-seq, ATAC-seq, RNA-seq)<br>• Identifies specialized molecular biology topics and molecular mechanisms (e.g., epigenetic modifications, heterochromatin, histone marks, chromatin accessibility)<br>• Captures acronyms and their conceptual topics (e.g., DNMT, PRC2, H3K9me3, H3K27me3)<br>• Returns results as a valid JSON array of strings</td>
+                <td class="output"><pre>```json
+["CRISPR-Cas9 multiplexing", "epigenetic modifications", "heterochromatin", "chromatin immunoprecipitation", "ChIP-seq", "histone marks", "H3K9me3", "H3K27me3", "DNA methyltransferase inhibition", "nucleosome positioning", "RNA-seq", "ATAC-seq", "chromatin accessibility", "PRC2 complex mutations", "transcriptional variance", "developmental genes", "DNA methylation", "three-dimensional chromatin architecture", "gene silencing pathways"]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it returns a valid JSON array of strings containing topics from the passage, with no extra commentary, and the response contains only the JSON array. It excels at the secondary criteria by extracting domain-specific terminology, techniques, molecular mechanisms, and acronyms comprehensively. The extraction is thorough and accurate, capturing 19 distinct topics that represent the key concepts discussed in the scholarly article. While there is minor redundancy between related concepts, this does not violate any stated criteria and reflects the interconnected nature of the topics in the source material.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a passage containing overlapping or hierarchical topics where main themes and sub-themes are intermingled to evaluate topic distinction and organization</td>
+                <td class="prompt-inputs"><strong>content:</strong> This study examines neuroplasticity in the context of cognitive rehabilitation following traumatic brain injury (TBI). We investigate how neuroplasticity mechanisms—including synaptic reorganization, axonal sprouting, and dendritic remodeling—facilitate recovery of executive function in TBI patients. Our findings demonstrate that intensive cognitive training leverages neuroplasticity to restore prefrontal cortex function, while simultaneously engaging compensatory neural pathways in the parietal lobe. We also explore how pharmacological interventions targeting brain-derived neurotrophic factor (BDNF) enhance neuroplasticity-dependent recovery. The interplay between cognitive rehabilitation intensity, neuroplasticity capacity, and individual genetic factors (BDNF polymorphisms) determines functional outcomes. Additionally, we address how age-related decline in neuroplasticity affects rehabilitation efficacy in older TBI populations.</td>
+                <td class="criteria">• Distinguishes between main themes (neuroplasticity, cognitive rehabilitation, TBI recovery) and sub-themes (synaptic reorganization, executive function, BDNF, age-related factors)<br>• Avoids redundant or overly granular topic extraction while capturing hierarchically related concepts<br>• Identifies topics at appropriate levels of abstraction without conflating distinct but related concepts</td>
+                <td class="output"><pre>```json
+["neuroplasticity", "cognitive rehabilitation", "traumatic brain injury", "synaptic reorganization", "axonal sprouting", "dendritic remodeling", "executive function", "prefrontal cortex", "parietal lobe", "brain-derived neurotrophic factor", "pharmacological interventions", "cognitive training", "compensatory neural pathways", "BDNF polymorphisms", "genetic factors", "age-related decline", "rehabilitation efficacy"]
+```</pre></td>
                 <td class="score-col"><span class="score score-high">8</span></td>
-                <td class="reasoning">The solution fully satisfies all mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and 6 specific meals with portions and timing. It meets secondary criteria by respecting sodium limits, using low GI carbohydrates, avoiding shellfish, and providing practical quantities. However, the caloric deficit strategy lacks justification relative to the athlete's likely TDEE, and the diabetic-friendly designation could be more rigorously supported with glycemic load data. The solution is competent and complete but doesn't demonstrate deep personalization to the athlete's specific metabolic needs.</td>
-            </tr>
-        
-            <tr>
-                <td>Testing with a lightweight sport athlete (gymnast/dancer) with low caloric requirements and vegan dietary restrictions to ensure nutritionally complete meals at reduced portions without compromising micronutrients</td>
-                <td class="prompt-inputs"><strong>Height:</strong> 160 cm<br><strong>Weight:</strong> 48 kg<br><strong>Goal:</strong> maintain performance and energy for training<br><strong>Dietary Restrictions:</strong> vegan</td>
-                <td class="criteria">• All meals are vegan with no animal products<br>• Meal plan includes adequate protein sources (legumes, tofu, nuts, seeds) to support muscle maintenance<br>• Micronutrients critical for vegans are addressed (B12, iron, calcium, omega-3s)<br>• Total daily caloric intake is appropriate for a lightweight athlete (approximately 1800-2000 calories)</td>
-                <td class="output"><pre># 1-Day Performance & Energy Maintenance Meal Plan
-## For 160cm, 48kg Vegan Athlete
-
----
-
-## Daily Nutrition Targets
-- **Calories: 2,000 kcal**
-- **Protein: 100g** (20% of calories)
-- **Carbohydrates: 260g** (52% of calories)
-- **Fat: 67g** (30% of calories)
-
----
-
-## MEAL SCHEDULE
-
-### **BREAKFAST - 7:00 AM**
-*Calories: 420 | P: 18g | C: 55g | F: 12g*
-
-- Oatmeal (dry): **60g**
-- Banana: **120g**
-- Almond butter: **25g**
-- Plant-based milk (unsweetened): **240ml**
-- Chia seeds: **10g**
-
----
-
-### **MID-MORNING SNACK - 10:00 AM**
-*Calories: 320 | P: 18g | C: 45g | F: 6g*
-
-- Tofu (firm, baked): **120g**
-- White rice (cooked): **120g**
-- Soy sauce: **5ml**
-- Sesame oil: **5ml**
-
----
-
-### **LUNCH - 1:00 PM**
-*Calories: 480 | P: 22g | C: 62g | F: 14g*
-
-- Lentil pasta (cooked): **150g**
-- Chickpeas (cooked): **100g**
-- Spinach (fresh): **100g**
-- Tomato sauce: **80g**
-- Olive oil: **10ml**
-
----
-
-### **PRE-WORKOUT SNACK - 3:30 PM**
-*Calories: 280 | P: 12g | C: 52g | F: 3g*
-
-- Rice cakes: **50g**
-- Vegan protein powder: **25g** (mixed with water)
-- Honey: **20g**
-- Berries (fresh): **80g**
-
----
-
-### **DINNER - 7:00 PM**
-*Calories: 400 | P: 20g | C: 40g | F: 18g*
-
-- Tempeh (baked): **100g**
-- Sweet potato (roasted): **200g**
-- Broccoli (steamed): **120g**
-- Coconut oil: **10ml**
-
----
-
-### **EVENING SNACK - 9:30 PM**
-*Calories: 100 | P: 10g | C: 6g | F: 14g*
-
-- Raw almonds: **40g**
-
----
-
-## DAILY TOTALS
-- **Calories: 2,000**
-- **Protein: 100g**
-- **Carbohydrates: 260g**
-- **Fat: 67g**
-
----
-
-## HYDRATION
-- **Water: 2.5-3 liters throughout the day**
-- Drink 300-400ml before, during, and after workouts
-- Include electrolyte drink during intense training sessions
-
-## NOTES
-✓ All foods are 100% plant-based and vegan  
-✓ Protein distributed across all meals for optimal absorption  
-✓ Carbs strategically timed around workouts for sustained energy  
-✓ Rich in iron sources (lentils, tempeh, tofu, spinach) with vitamin C for absorption  
-✓ Omega-3 content from chia seeds, flaxseed alternatives available  
-✓ Adjust portions if training intensity increases  
-✓ Consider B12 supplementation as vegan athletes require it</pre></td>
-                <td class="score-col"><span class="score score-high">9</span></td>
-                <td class="reasoning">The solution comprehensively meets all mandatory requirements with clear daily totals, macronutrient breakdowns, and detailed meal specifications with portions and timing. All secondary criteria are substantially addressed: 100% vegan compliance is confirmed, protein sources are abundant and well-distributed, and key vegan micronutrients (B12, iron, omega-3s) are explicitly addressed. The main limitation is that calcium receives less attention than other micronutrients, and the caloric target sits at the upper end of the recommended range without explicit justification based on the athlete's training intensity. These are minor issues that don't undermine the overall quality of the meal plan.</td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements with a properly formatted JSON array containing only clean topic strings. It demonstrates strong comprehension of the passage content and captures the essential topics across multiple levels of abstraction. However, it has minor deficiencies in the secondary criteria regarding hierarchy distinction and some redundancy between related concepts (BDNF polymorphisms vs. genetic factors, cognitive training vs. cognitive rehabilitation). These are not critical flaws—the solution appropriately avoids over-granularity while maintaining comprehensive coverage—but they prevent a perfect score.</td>
             </tr>
         
             </tbody>
