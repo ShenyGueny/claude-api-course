@@ -1,50 +1,66 @@
 [
   {
     "prompt_inputs": {
-      "Height": "203 cm",
-      "Weight": "120 kg",
-      "Goal": "muscle gain",
+      "Height": "180 cm",
+      "Weight": "70 kg",
+      "Goal": "endurance training for marathon",
       "Dietary Restrictions": "none"
     },
     "solution_criteria": [
-      "Meal plan contains 3-4 meals with appropriate caloric surplus for a large athlete (~3,500-3,800 kcal estimated daily need)",
-      "Macronutrient distribution supports muscle gain (high protein, balanced carbs/fats)",
-      "All meals are practical, concise, and achievable within 1 day",
-      "Plan format is compact and easy to follow"
+      "Meal plan totals 2,800-3,200 calories (appropriate for marathon training)",
+      "Carbohydrates comprise 55-65% of total calories to support endurance performance",
+      "Protein comprises 12-15% of total calories for recovery",
+      "Includes specific meals and snacks distributed throughout the day"
     ],
-    "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
-    "scenario": "Testing with extreme physical profiles (very tall/heavy athlete vs. petite athlete) to ensure caloric and macronutrient recommendations scale appropriately for different body compositions and energy demands"
-  },
-  {
-    "prompt_inputs": {
-      "Height": "180 cm",
-      "Weight": "70 kg",
-      "Goal": "Endurance training for marathon preparation",
-      "Dietary Restrictions": "Vegetarian"
-    },
-    "solution_criteria": [
-      "Meal plan is formatted for a single day with clear meal timing (breakfast, lunch, dinner, snacks)",
-      "Macronutrient distribution prioritizes carbohydrates (55-60%) appropriate for endurance training, with adequate protein (1.2-1.6g/kg) for recovery",
-      "All meals and snacks are vegetarian-compliant with no animal flesh products",
-      "Plan is compact and concise (under 400 tokens) with practical, realistic food choices"
-    ],
-    "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
-    "scenario": "Testing with a sport-specific scenario (e.g., endurance runner vs. strength athlete) to confirm the meal plan prioritizes relevant macronutrients and timing based on typical training demands, even if sport type isn't explicitly requested"
+    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+    "scenario": "Testing with an endurance athlete (marathon runner) with high caloric needs, normal BMI, and no dietary restrictions to verify appropriate macro distribution and energy density"
   },
   {
     "prompt_inputs": {
       "Height": "178 cm",
-      "Weight": "72 kg",
-      "Goal": "muscle gain",
-      "Dietary Restrictions": "vegetarian, gluten-free, nut allergy"
+      "Weight": "82 kg",
+      "Goal": "muscle gain for strength training",
+      "Dietary Restrictions": "vegetarian, nut allergy"
     },
     "solution_criteria": [
-      "All meals are vegetarian, gluten-free, and nut-free with no cross-contamination risks",
-      "Meal plan provides adequate protein (approximately 1.6-2.2g per kg body weight) to support muscle gain",
-      "Meal plan is structured as a single day with breakfast, lunch, dinner, and snacks",
-      "Meals are realistic, practical, and concise without excessive detail"
+      "Meal plan provides adequate protein (minimum 1.6g per kg body weight) from non-nut vegetarian sources",
+      "All meals comply with vegetarian and nut-free requirements",
+      "Plan spans a full day with breakfast, lunch, dinner, and snacks",
+      "Meals support strength training performance and muscle gain goals"
     ],
-    "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
-    "scenario": "Testing with an athlete having multiple dietary restrictions (vegetarian + gluten-free + nut allergy) to verify the meal plan accommodates all constraints simultaneously while maintaining adequate athletic nutrition"
+    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+    "scenario": "Testing with a strength athlete (weightlifter) with multiple dietary restrictions (vegetarian, nut allergy) to ensure protein sources are alternative-based and meal plan remains performance-optimized"
+  },
+  {
+    "prompt_inputs": {
+      "Height": "175 cm",
+      "Weight": "105 kg",
+      "Goal": "weight loss while maintaining athletic performance",
+      "Dietary Restrictions": "low sodium (under 2000mg daily), diabetic-friendly (low glycemic index), no shellfish allergy"
+    },
+    "solution_criteria": [
+      "Meal plan includes 6 meals/snacks distributed throughout the day with appropriate macronutrient balance for performance",
+      "All meals comply with low sodium (<2000mg total daily) and diabetic-friendly guidelines (low glycemic index carbohydrates)",
+      "Plan creates a moderate caloric deficit suitable for weight loss while supporting athletic training",
+      "No shellfish ingredients included and all meals are practical and specific with quantities"
+    ],
+    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+    "scenario": "Testing with an athlete with an unusually high BMI and specific medical dietary needs (low sodium, diabetic-friendly) to confirm the plan balances performance nutrition with health constraints"
+  },
+  {
+    "prompt_inputs": {
+      "Height": "160 cm",
+      "Weight": "48 kg",
+      "Goal": "maintain performance and energy for training",
+      "Dietary Restrictions": "vegan"
+    },
+    "solution_criteria": [
+      "All meals are vegan with no animal products",
+      "Meal plan includes adequate protein sources (legumes, tofu, nuts, seeds) to support muscle maintenance",
+      "Micronutrients critical for vegans are addressed (B12, iron, calcium, omega-3s)",
+      "Total daily caloric intake is appropriate for a lightweight athlete (approximately 1800-2000 calories)"
+    ],
+    "task_description": "generate 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+    "scenario": "Testing with a lightweight sport athlete (gymnast/dancer) with low caloric requirements and vegan dietary restrictions to ensure nutritionally complete meals at reduced portions without compromising micronutrients"
   }
 ]

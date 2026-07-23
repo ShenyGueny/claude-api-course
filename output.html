@@ -113,15 +113,15 @@
             <div class="summary-stats">
                 <div class="stat-box">
                     <div>Total Test Cases</div>
-                    <div class="stat-value">3</div>
+                    <div class="stat-value">4</div>
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">3.0 / 10</div>
+                    <div class="stat-value">8.8 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
-                    <div class="stat-value">0.0%</div>
+                    <div class="stat-value">100.0%</div>
                 </div>
             </div>
         </div>
@@ -140,140 +140,422 @@
             <tbody>
     
             <tr>
-                <td>Testing with extreme physical profiles (very tall/heavy athlete vs. petite athlete) to ensure caloric and macronutrient recommendations scale appropriately for different body compositions and energy demands</td>
-                <td class="prompt-inputs"><strong>Height:</strong> 203 cm<br><strong>Weight:</strong> 120 kg<br><strong>Goal:</strong> muscle gain<br><strong>Dietary Restrictions:</strong> none</td>
-                <td class="criteria">• Meal plan contains 3-4 meals with appropriate caloric surplus for a large athlete (~3,500-3,800 kcal estimated daily need)<br>• Macronutrient distribution supports muscle gain (high protein, balanced carbs/fats)<br>• All meals are practical, concise, and achievable within 1 day<br>• Plan format is compact and easy to follow</td>
-                <td class="output"><pre># Nutrition Plan for Muscle Gain
+                <td>Testing with a strength athlete (weightlifter) with multiple dietary restrictions (vegetarian, nut allergy) to ensure protein sources are alternative-based and meal plan remains performance-optimized</td>
+                <td class="prompt-inputs"><strong>Height:</strong> 178 cm<br><strong>Weight:</strong> 82 kg<br><strong>Goal:</strong> muscle gain for strength training<br><strong>Dietary Restrictions:</strong> vegetarian, nut allergy</td>
+                <td class="criteria">• Meal plan provides adequate protein (minimum 1.6g per kg body weight) from non-nut vegetarian sources<br>• All meals comply with vegetarian and nut-free requirements<br>• Plan spans a full day with breakfast, lunch, dinner, and snacks<br>• Meals support strength training performance and muscle gain goals</td>
+                <td class="output"><pre># 1-Day Muscle Gain Meal Plan
+## For 178cm, 82kg Athlete (Vegetarian & Nut-Free)
 
-Based on your stats (BMI ~29, tall frame), here's what you should focus on:
+---
 
-## **Daily Caloric Intake**
-- **2,800-3,200 calories/day** (slight surplus for muscle gain)
-- Adjust based on weekly weight gain (aim for 0.5-1 lb/week)
+## Daily Nutrition Targets
+- **Calories: 3,200 kcal**
+- **Protein: 175g** (22% of calories)
+- **Carbohydrates: 400g** (50% of calories)
+- **Fat: 107g** (30% of calories)
 
-## **Macronutrient Targets**
-- **Protein: 150-180g/day** (1.25-1.5g per kg body weight)
-- **Carbs: 300-380g/day** (fuel for training + recovery)
-- **Fat: 70-90g/day** (hormone production + health)
+---
 
-## **Best Foods to Eat**
+## MEAL SCHEDULE
 
-**Proteins:**
-- Chicken breast, lean beef, fish (salmon, cod)
-- Eggs, Greek yogurt, cottage cheese
-- Protein powder (whey or plant-based)
+### **BREAKFAST - 7:00 AM**
+*Calories: 650 | P: 35g | C: 85g | F: 15g*
 
-**Carbs:**
-- Oats, rice, pasta, potatoes
-- Whole grain bread, quinoa
-- Fruits (bananas, berries)
+- Oatmeal (rolled oats): **90g** (dry)
+- Banana: **150g**
+- Whole milk: **240ml**
+- Honey: **25g**
+- Sunflower seed butter: **20g**
 
-**Fats:**
-- Olive oil, nuts, avocados
-- Fatty fish, nut butters
+---
 
-**Vegetables:**
-- Broccoli, spinach, sweet potatoes (nutrient density)
+### **MID-MORNING SNACK - 10:00 AM**
+*Calories: 400 | P: 25g | C: 50g | F: 12g*
 
-## **Meal Timing Tips**
-- Eat protein with every meal
-- Have carbs around your workouts
-- Eat in a slight surplus (200-400 cal/day above maintenance)
+- Greek yogurt (plain, full-fat): **200g**
+- Granola (store-bought): **50g**
+- Blueberries (fresh): **80g**
+- Honey: **15g**
 
-Would you like help calculating your exact maintenance calories or a sample meal plan?</pre></td>
-                <td class="score-col"><span class="score score-low">3</span></td>
-                <td class="reasoning">The solution fails to meet the core mandatory requirement of providing 'meals with exact foods, portions, and timing.' Instead, it offers general nutritional guidance and food categories without constructing an actual 1-day meal plan. While the macronutrient targets and food suggestions are sound, the solution does not deliver the compact, structured meal plan explicitly requested in the task. The caloric recommendation also appears conservative relative to the criteria's 3,500-3,800 kcal estimate for this athlete profile. The response reads more like nutritional education than a completed meal plan.</td>
+---
+
+### **LUNCH - 1:00 PM**
+*Calories: 700 | P: 45g | C: 80g | F: 20g*
+
+- Paneer (cottage cheese): **200g** (grilled)
+- Basmati rice (cooked): **200g**
+- Spinach: **150g** (sautéed)
+- Olive oil: **15ml**
+- Salt & pepper to taste
+
+---
+
+### **PRE-WORKOUT SNACK - 3:30 PM**
+*Calories: 350 | P: 20g | C: 60g | F: 5g*
+
+- White bread: **80g**
+- Peanut butter (sunflower seed alternative): **20g**
+- Banana: **120g**
+- Honey: **20g**
+
+---
+
+### **DINNER - 7:00 PM**
+*Calories: 700 | P: 50g | C: 85g | F: 20g*
+
+- Lentils (cooked): **250g**
+- Sweet potato: **280g** (roasted)
+- Broccoli: **150g** (steamed)
+- Coconut oil: **15ml**
+- Lemon juice to taste
+
+---
+
+### **EVENING SNACK - 9:30 PM**
+*Calories: 400 | P: 20g | C: 40g | F: 35g*
+
+- Whole milk: **240ml**
+- Whey protein powder (vanilla): **30g**
+- Seeds mix (sunflower & pumpkin): **40g**
+- Dates (pitted): **50g**
+
+---
+
+## DAILY TOTALS
+- **Calories: 3,200**
+- **Protein: 195g**
+- **Carbohydrates: 400g**
+- **Fat: 107g**
+
+---
+
+## HYDRATION
+- **Water: 3.5-4 liters throughout the day**
+- Drink 500ml before, during, and after workouts
+
+## NOTES
+✓ All foods are vegetarian (no meat or fish)  
+✓ No tree nuts or peanuts—sunflower seed butter used as alternative  
+✓ High protein from dairy, legumes, and protein powder  
+✓ Carbs strategically timed around workouts for energy and recovery  
+✓ Sufficient calories to support muscle gain at 82kg bodyweight  
+✓ Adjust portion sizes if actual weight changes  
+✓ Consider taking a vitamin B12 supplement for long-term vegetarian diet health</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution comprehensively satisfies all mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and detailed meal specifications with portions and timing. It successfully addresses both dietary restrictions (vegetarian and nut-free) while providing adequate protein (195g vs. 131.2g minimum) to support muscle gain. The plan spans a full day with six eating occasions strategically distributed. All secondary criteria are met: meals support strength training through carb timing and high protein intake, and the plan is practical and well-documented. Minor weaknesses exist in meal timing optimization and workout context, but these do not detract from meeting the stated criteria.</td>
             </tr>
         
             <tr>
-                <td>Testing with a sport-specific scenario (e.g., endurance runner vs. strength athlete) to confirm the meal plan prioritizes relevant macronutrients and timing based on typical training demands, even if sport type isn't explicitly requested</td>
-                <td class="prompt-inputs"><strong>Height:</strong> 180 cm<br><strong>Weight:</strong> 70 kg<br><strong>Goal:</strong> Endurance training for marathon preparation<br><strong>Dietary Restrictions:</strong> Vegetarian</td>
-                <td class="criteria">• Meal plan is formatted for a single day with clear meal timing (breakfast, lunch, dinner, snacks)<br>• Macronutrient distribution prioritizes carbohydrates (55-60%) appropriate for endurance training, with adequate protein (1.2-1.6g/kg) for recovery<br>• All meals and snacks are vegetarian-compliant with no animal flesh products<br>• Plan is compact and concise (under 400 tokens) with practical, realistic food choices</td>
-                <td class="output"><pre># Nutrition Plan for Marathon Training (Vegetarian)
+                <td>Testing with an endurance athlete (marathon runner) with high caloric needs, normal BMI, and no dietary restrictions to verify appropriate macro distribution and energy density</td>
+                <td class="prompt-inputs"><strong>Height:</strong> 180 cm<br><strong>Weight:</strong> 70 kg<br><strong>Goal:</strong> endurance training for marathon<br><strong>Dietary Restrictions:</strong> none</td>
+                <td class="criteria">• Meal plan totals 2,800-3,200 calories (appropriate for marathon training)<br>• Carbohydrates comprise 55-65% of total calories to support endurance performance<br>• Protein comprises 12-15% of total calories for recovery<br>• Includes specific meals and snacks distributed throughout the day</td>
+                <td class="output"><pre># 1-Day Endurance Training Meal Plan
+## For 180cm, 70kg Athlete (Marathon Training)
 
-## Daily Caloric Needs
-- **Base metabolic rate:** ~1,700 calories
-- **Training adjustment:** +500-800 calories (depending on workout intensity)
-- **Total target:** ~2,200-2,500 calories/day
+---
 
-## Macronutrient Breakdown
+## Daily Nutrition Targets
+- **Calories: 2,800 kcal**
+- **Protein: 112g** (16% of calories)
+- **Carbohydrates: 420g** (60% of calories)
+- **Fat: 78g** (25% of calories)
 
-| Nutrient | % | Grams | Purpose |
-|----------|---|-------|---------|
-| **Carbohydrates** | 55-60% | 300-375g | Fuel for endurance |
-| **Protein** | 15-20% | 80-115g | Muscle repair |
-| **Fat** | 20-25% | 50-70g | Energy & recovery |
+---
 
-## Key Foods by Category
+## MEAL SCHEDULE
 
-### 🥕 **Carbohydrates** (Primary fuel)
-- Oats, brown rice, quinoa, whole wheat pasta
-- Sweet potatoes, legumes (lentils, chickpeas)
-- Fruits: bananas, berries, dates
+### **BREAKFAST - 7:00 AM**
+*Calories: 550 | P: 18g | C: 85g | F: 14g*
 
-### 🥜 **Protein Sources** (Vegetarian)
-- Lentils, chickpeas, beans
-- Tofu, tempeh, edamame
-- Greek yogurt, cottage cheese
-- Nuts, seeds, nut butters
+- Oatmeal (dry): **80g**
+- Whole milk: **240ml**
+- Banana: **150g**
+- Honey: **20g**
+- Almonds: **25g**
 
-### 🥗 **Healthy Fats**
-- Olive oil, avocado
-- Nuts & seeds (almonds, chia, flax)
-- Whole eggs
+---
 
-## Timing Tips
-- **Before runs:** Light carbs 2-3 hours prior
-- **During long runs (90+ min):** Sports drink/gels
-- **Post-run:** Carbs + protein within 30-60 min
+### **MID-MORNING SNACK - 10:00 AM**
+*Calories: 320 | P: 12g | C: 55g | F: 6g*
 
-Would you like a sample daily meal plan?</pre></td>
-                <td class="score-col"><span class="score score-low">3</span></td>
-                <td class="reasoning">The solution fails a MANDATORY requirement: it does not include 'Meals with exact foods, portions, and timing.' Instead of providing a formatted single-day meal plan with breakfast, lunch, dinner, and snacks as specified in the criteria, it provides only a framework and food categories, then asks if the user wants a sample plan. While the nutritional analysis is sound and vegetarian-compliant, the core deliverable—an actual compact 1-day meal plan with specific meals and portions—is absent. This is a fundamental failure to complete the assigned task.</td>
+- Whole wheat bread: **60g** (2 slices)
+- Peanut butter: **20g**
+- Apple: **180g**
+
+---
+
+### **LUNCH - 1:00 PM**
+*Calories: 650 | P: 42g | C: 75g | F: 18g*
+
+- Chicken breast (grilled): **180g**
+- Brown rice (cooked): **200g**
+- Spinach (steamed): **120g**
+- Olive oil: **15ml**
+- Lemon juice to taste
+
+---
+
+### **PRE-WORKOUT SNACK - 3:30 PM**
+*Calories: 380 | P: 15g | C: 65g | F: 6g*
+
+- Sweet potato: **200g** (baked)
+- Greek yogurt (plain): **150g**
+- Berries (mixed): **100g**
+
+---
+
+### **DINNER - 7:00 PM**
+*Calories: 650 | P: 48g | C: 78g | F: 18g*
+
+- Salmon fillet (baked): **180g**
+- White potato (boiled): **250g**
+- Broccoli (steamed): **150g**
+- Olive oil: **15ml**
+- Sea salt & pepper to taste
+
+---
+
+### **EVENING SNACK - 9:30 PM**
+*Calories: 250 | P: 20g | C: 22g | F: 16g*
+
+- Greek yogurt (plain): **200g**
+- Granola: **40g**
+- Honey: **15g**
+
+---
+
+## DAILY TOTALS
+- **Calories: 2,800**
+- **Protein: 112g**
+- **Carbohydrates: 420g**
+- **Fat: 78g**
+
+---
+
+## HYDRATION
+- **Water: 3.5-4 liters throughout the day**
+- Drink 500ml upon waking
+- 250ml with each meal
+- 500ml before, during (if >90 min), and after runs
+- Sports drink (6-8% carbs) during long runs (>90 minutes)
+
+## NOTES
+✓ High carbohydrate ratio supports endurance training and glycogen replenishment  
+✓ Moderate protein for muscle recovery without excess bulk  
+✓ Meals timed to support training schedule and energy availability  
+✓ Complex carbs emphasize sustained energy for distance running  
+✓ Hydration prioritized for sweat loss during endurance work  
+✓ Adjust portions if training volume increases or body weight changes</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution comprehensively meets all mandatory requirements with clear daily totals, macronutrient breakdowns, and detailed meal specifications with portions and timing. The macronutrient percentages align well with endurance training needs, particularly the 60% carbohydrate emphasis. The caloric target of 2,800 kcal is technically within the 2,800-3,200 range but sits at the minimum threshold, which could be a limitation for some athletes. The meal plan is well-structured and practical, though it lacks some nuance around training-specific adjustments. All secondary criteria are met effectively.</td>
             </tr>
         
             <tr>
-                <td>Testing with an athlete having multiple dietary restrictions (vegetarian + gluten-free + nut allergy) to verify the meal plan accommodates all constraints simultaneously while maintaining adequate athletic nutrition</td>
-                <td class="prompt-inputs"><strong>Height:</strong> 178 cm<br><strong>Weight:</strong> 72 kg<br><strong>Goal:</strong> muscle gain<br><strong>Dietary Restrictions:</strong> vegetarian, gluten-free, nut allergy</td>
-                <td class="criteria">• All meals are vegetarian, gluten-free, and nut-free with no cross-contamination risks<br>• Meal plan provides adequate protein (approximately 1.6-2.2g per kg body weight) to support muscle gain<br>• Meal plan is structured as a single day with breakfast, lunch, dinner, and snacks<br>• Meals are realistic, practical, and concise without excessive detail</td>
-                <td class="output"><pre># Nutrition Plan for Muscle Gain (Vegetarian, Gluten-Free, Nut Allergy)
+                <td>Testing with an athlete with an unusually high BMI and specific medical dietary needs (low sodium, diabetic-friendly) to confirm the plan balances performance nutrition with health constraints</td>
+                <td class="prompt-inputs"><strong>Height:</strong> 175 cm<br><strong>Weight:</strong> 105 kg<br><strong>Goal:</strong> weight loss while maintaining athletic performance<br><strong>Dietary Restrictions:</strong> low sodium (under 2000mg daily), diabetic-friendly (low glycemic index), no shellfish allergy</td>
+                <td class="criteria">• Meal plan includes 6 meals/snacks distributed throughout the day with appropriate macronutrient balance for performance<br>• All meals comply with low sodium (<2000mg total daily) and diabetic-friendly guidelines (low glycemic index carbohydrates)<br>• Plan creates a moderate caloric deficit suitable for weight loss while supporting athletic training<br>• No shellfish ingredients included and all meals are practical and specific with quantities</td>
+                <td class="output"><pre># 1-Day Weight Loss Meal Plan
+## For 175cm, 105kg Athlete (Low Sodium, Diabetic-Friendly, No Shellfish)
 
-## Daily Calorie & Macro Targets
-- **TDEE**: ~2,400-2,600 calories/day
-- **Protein**: 130-145g/day (1.8-2g per kg bodyweight)
-- **Carbs**: 300-350g/day
-- **Fats**: 65-75g/day
+---
 
-## Best Protein Sources
-- **Dairy**: Greek yogurt, cottage cheese, milk, cheese
-- **Eggs**: Whole eggs and egg whites
-- **Legumes**: Lentils, chickpeas, beans, peas
-- **Tofu/Tempeh**: Soy-based alternatives
-- **Protein powder**: Whey, casein, or plant-based (pea/hemp)
-- **Seeds**: Sunflower, pumpkin, hemp (no tree nuts)
+## Daily Nutrition Targets
+- **Calories: 2,400 kcal**
+- **Protein: 180g** (30% of calories)
+- **Carbohydrates: 240g** (40% of calories)
+- **Fat: 80g** (30% of calories)
+- **Sodium: Under 2,000mg**
 
-## Carb Sources (Gluten-Free)
-- Rice, potatoes, sweet potatoes, oats
-- Quinoa, corn, gluten-free bread/pasta
-- Fruits and vegetables
-- Buckwheat, millet
+---
 
-## Healthy Fats
-- Olive oil, avocado oil
-- Seeds (pumpkin, sunflower, hemp)
-- Fatty fish (if eating): salmon, mackerel
-- Coconut oil
+## MEAL SCHEDULE
 
-## Sample Day Structure
-- Breakfast: Eggs + oats + berries
-- Snack: Greek yogurt + seeds
-- Lunch: Tofu/lentil curry + rice
-- Snack: Protein shake + fruit
-- Dinner: Tempeh + sweet potato + vegetables
+### **BREAKFAST - 7:00 AM**
+*Calories: 420 | P: 35g | C: 45g | F: 12g | Na: 280mg*
 
-**Note**: Consider a B12 supplement (vegetarian sources are limited).</pre></td>
-                <td class="score-col"><span class="score score-low">3</span></td>
-                <td class="reasoning">The solution fails to meet mandatory requirements. While it demonstrates strong understanding of the athlete's needs and dietary restrictions, it does not deliver the core requirement: a complete single-day meal plan with exact foods, portions, and timing. The 'Sample Day Structure' is a generic framework, not an actual meal plan. Additionally, there is no daily caloric total or macronutrient breakdown provided for the meals themselves. The task explicitly requires 'exact foods, portions, and timing' and a 'daily caloric total' with 'macronutrient breakdown' - none of which are present in the solution. The solution reads more like nutritional guidance than an actual meal plan.</td>
+- Egg whites: **120g** (3 large eggs)
+- Steel-cut oatmeal (unsalted): **45g** (dry)
+- Blueberries: **100g**
+- Cinnamon: **2g**
+- Water: **240ml**
+
+---
+
+### **MID-MORNING SNACK - 10:00 AM**
+*Calories: 200 | P: 30g | C: 15g | F: 4g | Na: 95mg*
+
+- Grilled chicken breast (no salt added): **150g**
+- Apple (Granny Smith): **180g**
+
+---
+
+### **LUNCH - 1:00 PM**
+*Calories: 520 | P: 50g | C: 55g | F: 15g | Na: 310mg*
+
+- Baked salmon fillet (unsalted): **180g**
+- Brown rice (cooked, unsalted): **120g**
+- Spinach (steamed, no added salt): **150g**
+- Extra virgin olive oil: **10ml**
+- Lemon juice: **15ml**
+
+---
+
+### **PRE-WORKOUT SNACK - 3:30 PM**
+*Calories: 300 | P: 25g | C: 40g | F: 5g | Na: 140mg*
+
+- Turkey breast (low-sodium, unsalted): **120g**
+- Sweet potato (baked, no salt): **150g**
+- Green beans (steamed): **100g**
+
+---
+
+### **DINNER - 7:00 PM**
+*Calories: 520 | P: 55g | C: 50g | F: 18g | Na: 280mg*
+
+- Lean ground turkey (93/7, unsalted): **200g** (cooked)
+- Quinoa (cooked, unsalted): **100g**
+- Broccoli (steamed): **200g**
+- Avocado oil: **12ml**
+- Black pepper to taste
+
+---
+
+### **EVENING SNACK - 9:30 PM**
+*Calories: 240 | P: 15g | C: 35g | F: 6g | Na: 85mg*
+
+- Plain Greek yogurt (0% fat, unsalted): **150g**
+- Pear: **150g**
+- Almonds (unsalted): **20g**
+
+---
+
+## DAILY TOTALS
+- **Calories: 2,400**
+- **Protein: 180g**
+- **Carbohydrates: 240g**
+- **Fat: 80g**
+- **Sodium: 1,190mg** ✓ (under 2,000mg limit)
+
+---
+
+## HYDRATION
+- **Water: 3.5-4 liters throughout the day**
+- Drink 500ml upon waking, before/after workouts
+- Herbal tea (unsalted) acceptable for variety
+
+## NOTES
+✓ All foods are low glycemic index or have minimal sodium  
+✓ No shellfish included  
+✓ High protein supports muscle preservation during weight loss  
+✓ Carbs distributed evenly; heavier intake around training  
+✓ Avoid added salt; use herbs, spices, and lemon for flavor  
+✓ Monitor progress weekly; adjust calories by ±200kcal if needed  
+✓</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and 6 specific meals with portions and timing. It meets secondary criteria by respecting sodium limits, using low GI carbohydrates, avoiding shellfish, and providing practical quantities. However, the caloric deficit strategy lacks justification relative to the athlete's likely TDEE, and the diabetic-friendly designation could be more rigorously supported with glycemic load data. The solution is competent and complete but doesn't demonstrate deep personalization to the athlete's specific metabolic needs.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a lightweight sport athlete (gymnast/dancer) with low caloric requirements and vegan dietary restrictions to ensure nutritionally complete meals at reduced portions without compromising micronutrients</td>
+                <td class="prompt-inputs"><strong>Height:</strong> 160 cm<br><strong>Weight:</strong> 48 kg<br><strong>Goal:</strong> maintain performance and energy for training<br><strong>Dietary Restrictions:</strong> vegan</td>
+                <td class="criteria">• All meals are vegan with no animal products<br>• Meal plan includes adequate protein sources (legumes, tofu, nuts, seeds) to support muscle maintenance<br>• Micronutrients critical for vegans are addressed (B12, iron, calcium, omega-3s)<br>• Total daily caloric intake is appropriate for a lightweight athlete (approximately 1800-2000 calories)</td>
+                <td class="output"><pre># 1-Day Performance & Energy Maintenance Meal Plan
+## For 160cm, 48kg Vegan Athlete
+
+---
+
+## Daily Nutrition Targets
+- **Calories: 2,000 kcal**
+- **Protein: 100g** (20% of calories)
+- **Carbohydrates: 260g** (52% of calories)
+- **Fat: 67g** (30% of calories)
+
+---
+
+## MEAL SCHEDULE
+
+### **BREAKFAST - 7:00 AM**
+*Calories: 420 | P: 18g | C: 55g | F: 12g*
+
+- Oatmeal (dry): **60g**
+- Banana: **120g**
+- Almond butter: **25g**
+- Plant-based milk (unsweetened): **240ml**
+- Chia seeds: **10g**
+
+---
+
+### **MID-MORNING SNACK - 10:00 AM**
+*Calories: 320 | P: 18g | C: 45g | F: 6g*
+
+- Tofu (firm, baked): **120g**
+- White rice (cooked): **120g**
+- Soy sauce: **5ml**
+- Sesame oil: **5ml**
+
+---
+
+### **LUNCH - 1:00 PM**
+*Calories: 480 | P: 22g | C: 62g | F: 14g*
+
+- Lentil pasta (cooked): **150g**
+- Chickpeas (cooked): **100g**
+- Spinach (fresh): **100g**
+- Tomato sauce: **80g**
+- Olive oil: **10ml**
+
+---
+
+### **PRE-WORKOUT SNACK - 3:30 PM**
+*Calories: 280 | P: 12g | C: 52g | F: 3g*
+
+- Rice cakes: **50g**
+- Vegan protein powder: **25g** (mixed with water)
+- Honey: **20g**
+- Berries (fresh): **80g**
+
+---
+
+### **DINNER - 7:00 PM**
+*Calories: 400 | P: 20g | C: 40g | F: 18g*
+
+- Tempeh (baked): **100g**
+- Sweet potato (roasted): **200g**
+- Broccoli (steamed): **120g**
+- Coconut oil: **10ml**
+
+---
+
+### **EVENING SNACK - 9:30 PM**
+*Calories: 100 | P: 10g | C: 6g | F: 14g*
+
+- Raw almonds: **40g**
+
+---
+
+## DAILY TOTALS
+- **Calories: 2,000**
+- **Protein: 100g**
+- **Carbohydrates: 260g**
+- **Fat: 67g**
+
+---
+
+## HYDRATION
+- **Water: 2.5-3 liters throughout the day**
+- Drink 300-400ml before, during, and after workouts
+- Include electrolyte drink during intense training sessions
+
+## NOTES
+✓ All foods are 100% plant-based and vegan  
+✓ Protein distributed across all meals for optimal absorption  
+✓ Carbs strategically timed around workouts for sustained energy  
+✓ Rich in iron sources (lentils, tempeh, tofu, spinach) with vitamin C for absorption  
+✓ Omega-3 content from chia seeds, flaxseed alternatives available  
+✓ Adjust portions if training intensity increases  
+✓ Consider B12 supplementation as vegan athletes require it</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution comprehensively meets all mandatory requirements with clear daily totals, macronutrient breakdowns, and detailed meal specifications with portions and timing. All secondary criteria are substantially addressed: 100% vegan compliance is confirmed, protein sources are abundant and well-distributed, and key vegan micronutrients (B12, iron, omega-3s) are explicitly addressed. The main limitation is that calcium receives less attention than other micronutrients, and the caloric target sits at the upper end of the recommended range without explicit justification based on the athlete's training intensity. These are minor issues that don't undermine the overall quality of the meal plan.</td>
             </tr>
         
             </tbody>
