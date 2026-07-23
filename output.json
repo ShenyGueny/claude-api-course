@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# Nutrition Plan for Muscle Gain\n\nBased on your stats (BMI ~29, tall frame), here's what you should focus on:\n\n## **Daily Caloric Intake**\n- **2,800-3,200 calories/day** (slight surplus for muscle gain)\n- Adjust based on weekly weight gain (aim for 0.5-1 lb/week)\n\n## **Macronutrient Targets**\n- **Protein: 150-180g/day** (1.25-1.5g per kg body weight)\n- **Carbs: 300-380g/day** (fuel for training + recovery)\n- **Fat: 70-90g/day** (hormone production + health)\n\n## **Best Foods to Eat**\n\n**Proteins:**\n- Chicken breast, lean beef, fish (salmon, cod)\n- Eggs, Greek yogurt, cottage cheese\n- Protein powder (whey or plant-based)\n\n**Carbs:**\n- Oats, rice, pasta, potatoes\n- Whole grain bread, quinoa\n- Fruits (bananas, berries)\n\n**Fats:**\n- Olive oil, nuts, avocados\n- Fatty fish, nut butters\n\n**Vegetables:**\n- Broccoli, spinach, sweet potatoes (nutrient density)\n\n## **Meal Timing Tips**\n- Eat protein with every meal\n- Have carbs around your workouts\n- Eat in a slight surplus (200-400 cal/day above maintenance)\n\nWould you like help calculating your exact maintenance calories or a sample meal plan?",
+    "test_case": {
+      "prompt_inputs": {
+        "Height": "203 cm",
+        "Weight": "120 kg",
+        "Goal": "muscle gain",
+        "Dietary Restrictions": "none"
+      },
+      "solution_criteria": [
+        "Meal plan contains 3-4 meals with appropriate caloric surplus for a large athlete (~3,500-3,800 kcal estimated daily need)",
+        "Macronutrient distribution supports muscle gain (high protein, balanced carbs/fats)",
+        "All meals are practical, concise, and achievable within 1 day",
+        "Plan format is compact and easy to follow"
+      ],
+      "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+      "scenario": "Testing with extreme physical profiles (very tall/heavy athlete vs. petite athlete) to ensure caloric and macronutrient recommendations scale appropriately for different body compositions and energy demands"
+    },
+    "score": 3,
+    "reasoning": "The solution fails to meet the core mandatory requirement of providing 'meals with exact foods, portions, and timing.' Instead, it offers general nutritional guidance and food categories without constructing an actual 1-day meal plan. While the macronutrient targets and food suggestions are sound, the solution does not deliver the compact, structured meal plan explicitly requested in the task. The caloric recommendation also appears conservative relative to the criteria's 3,500-3,800 kcal estimate for this athlete profile. The response reads more like nutritional education than a completed meal plan."
+  },
+  {
+    "output": "# Nutrition Plan for Marathon Training (Vegetarian)\n\n## Daily Caloric Needs\n- **Base metabolic rate:** ~1,700 calories\n- **Training adjustment:** +500-800 calories (depending on workout intensity)\n- **Total target:** ~2,200-2,500 calories/day\n\n## Macronutrient Breakdown\n\n| Nutrient | % | Grams | Purpose |\n|----------|---|-------|---------|\n| **Carbohydrates** | 55-60% | 300-375g | Fuel for endurance |\n| **Protein** | 15-20% | 80-115g | Muscle repair |\n| **Fat** | 20-25% | 50-70g | Energy & recovery |\n\n## Key Foods by Category\n\n### \ud83e\udd55 **Carbohydrates** (Primary fuel)\n- Oats, brown rice, quinoa, whole wheat pasta\n- Sweet potatoes, legumes (lentils, chickpeas)\n- Fruits: bananas, berries, dates\n\n### \ud83e\udd5c **Protein Sources** (Vegetarian)\n- Lentils, chickpeas, beans\n- Tofu, tempeh, edamame\n- Greek yogurt, cottage cheese\n- Nuts, seeds, nut butters\n\n### \ud83e\udd57 **Healthy Fats**\n- Olive oil, avocado\n- Nuts & seeds (almonds, chia, flax)\n- Whole eggs\n\n## Timing Tips\n- **Before runs:** Light carbs 2-3 hours prior\n- **During long runs (90+ min):** Sports drink/gels\n- **Post-run:** Carbs + protein within 30-60 min\n\nWould you like a sample daily meal plan?",
+    "test_case": {
+      "prompt_inputs": {
+        "Height": "180 cm",
+        "Weight": "70 kg",
+        "Goal": "Endurance training for marathon preparation",
+        "Dietary Restrictions": "Vegetarian"
+      },
+      "solution_criteria": [
+        "Meal plan is formatted for a single day with clear meal timing (breakfast, lunch, dinner, snacks)",
+        "Macronutrient distribution prioritizes carbohydrates (55-60%) appropriate for endurance training, with adequate protein (1.2-1.6g/kg) for recovery",
+        "All meals and snacks are vegetarian-compliant with no animal flesh products",
+        "Plan is compact and concise (under 400 tokens) with practical, realistic food choices"
+      ],
+      "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+      "scenario": "Testing with a sport-specific scenario (e.g., endurance runner vs. strength athlete) to confirm the meal plan prioritizes relevant macronutrients and timing based on typical training demands, even if sport type isn't explicitly requested"
+    },
+    "score": 3,
+    "reasoning": "The solution fails a MANDATORY requirement: it does not include 'Meals with exact foods, portions, and timing.' Instead of providing a formatted single-day meal plan with breakfast, lunch, dinner, and snacks as specified in the criteria, it provides only a framework and food categories, then asks if the user wants a sample plan. While the nutritional analysis is sound and vegetarian-compliant, the core deliverable\u2014an actual compact 1-day meal plan with specific meals and portions\u2014is absent. This is a fundamental failure to complete the assigned task."
+  },
+  {
+    "output": "# Nutrition Plan for Muscle Gain (Vegetarian, Gluten-Free, Nut Allergy)\n\n## Daily Calorie & Macro Targets\n- **TDEE**: ~2,400-2,600 calories/day\n- **Protein**: 130-145g/day (1.8-2g per kg bodyweight)\n- **Carbs**: 300-350g/day\n- **Fats**: 65-75g/day\n\n## Best Protein Sources\n- **Dairy**: Greek yogurt, cottage cheese, milk, cheese\n- **Eggs**: Whole eggs and egg whites\n- **Legumes**: Lentils, chickpeas, beans, peas\n- **Tofu/Tempeh**: Soy-based alternatives\n- **Protein powder**: Whey, casein, or plant-based (pea/hemp)\n- **Seeds**: Sunflower, pumpkin, hemp (no tree nuts)\n\n## Carb Sources (Gluten-Free)\n- Rice, potatoes, sweet potatoes, oats\n- Quinoa, corn, gluten-free bread/pasta\n- Fruits and vegetables\n- Buckwheat, millet\n\n## Healthy Fats\n- Olive oil, avocado oil\n- Seeds (pumpkin, sunflower, hemp)\n- Fatty fish (if eating): salmon, mackerel\n- Coconut oil\n\n## Sample Day Structure\n- Breakfast: Eggs + oats + berries\n- Snack: Greek yogurt + seeds\n- Lunch: Tofu/lentil curry + rice\n- Snack: Protein shake + fruit\n- Dinner: Tempeh + sweet potato + vegetables\n\n**Note**: Consider a B12 supplement (vegetarian sources are limited).",
+    "test_case": {
+      "prompt_inputs": {
+        "Height": "178 cm",
+        "Weight": "72 kg",
+        "Goal": "muscle gain",
+        "Dietary Restrictions": "vegetarian, gluten-free, nut allergy"
+      },
+      "solution_criteria": [
+        "All meals are vegetarian, gluten-free, and nut-free with no cross-contamination risks",
+        "Meal plan provides adequate protein (approximately 1.6-2.2g per kg body weight) to support muscle gain",
+        "Meal plan is structured as a single day with breakfast, lunch, dinner, and snacks",
+        "Meals are realistic, practical, and concise without excessive detail"
+      ],
+      "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+      "scenario": "Testing with an athlete having multiple dietary restrictions (vegetarian + gluten-free + nut allergy) to verify the meal plan accommodates all constraints simultaneously while maintaining adequate athletic nutrition"
+    },
+    "score": 3,
+    "reasoning": "The solution fails to meet mandatory requirements. While it demonstrates strong understanding of the athlete's needs and dietary restrictions, it does not deliver the core requirement: a complete single-day meal plan with exact foods, portions, and timing. The 'Sample Day Structure' is a generic framework, not an actual meal plan. Additionally, there is no daily caloric total or macronutrient breakdown provided for the meals themselves. The task explicitly requires 'exact foods, portions, and timing' and a 'daily caloric total' with 'macronutrient breakdown' - none of which are present in the solution. The solution reads more like nutritional guidance than an actual meal plan."
+  }
+]

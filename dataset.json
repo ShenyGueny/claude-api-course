@@ -1,32 +1,50 @@
 [
   {
-    "prompt_inputs": {},
+    "prompt_inputs": {
+      "Height": "203 cm",
+      "Weight": "120 kg",
+      "Goal": "muscle gain",
+      "Dietary Restrictions": "none"
+    },
     "solution_criteria": [
-      "Handles input without errors or timeouts",
-      "Maintains output quality and coherence despite input complexity"
+      "Meal plan contains 3-4 meals with appropriate caloric surplus for a large athlete (~3,500-3,800 kcal estimated daily need)",
+      "Macronutrient distribution supports muscle gain (high protein, balanced carbs/fats)",
+      "All meals are practical, concise, and achievable within 1 day",
+      "Plan format is compact and easy to follow"
     ],
-    "task_description": "",
-    "scenario": "Testing with extremely long or complex input strings to assess performance and output quality under stress conditions"
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+    "scenario": "Testing with extreme physical profiles (very tall/heavy athlete vs. petite athlete) to ensure caloric and macronutrient recommendations scale appropriately for different body compositions and energy demands"
   },
   {
-    "prompt_inputs": {},
+    "prompt_inputs": {
+      "Height": "180 cm",
+      "Weight": "70 kg",
+      "Goal": "Endurance training for marathon preparation",
+      "Dietary Restrictions": "Vegetarian"
+    },
     "solution_criteria": [
-      "System handles empty/null inputs gracefully without crashing",
-      "Provides clear error message or default behavior when no input is provided",
-      "Returns a valid response structure even with missing data"
+      "Meal plan is formatted for a single day with clear meal timing (breakfast, lunch, dinner, snacks)",
+      "Macronutrient distribution prioritizes carbohydrates (55-60%) appropriate for endurance training, with adequate protein (1.2-1.6g/kg) for recovery",
+      "All meals and snacks are vegetarian-compliant with no animal flesh products",
+      "Plan is compact and concise (under 400 tokens) with practical, realistic food choices"
     ],
-    "task_description": "",
-    "scenario": "Testing with empty or null input values to verify error handling and default behavior"
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+    "scenario": "Testing with a sport-specific scenario (e.g., endurance runner vs. strength athlete) to confirm the meal plan prioritizes relevant macronutrients and timing based on typical training demands, even if sport type isn't explicitly requested"
   },
   {
-    "prompt_inputs": {},
+    "prompt_inputs": {
+      "Height": "178 cm",
+      "Weight": "72 kg",
+      "Goal": "muscle gain",
+      "Dietary Restrictions": "vegetarian, gluten-free, nut allergy"
+    },
     "solution_criteria": [
-      "Correctly parses and preserves all special characters (!, @, #, $, %, ^, &, *)",
-      "Handles Unicode symbols properly (\u00e9mojis: \ud83c\udfaf\ud83d\udcca\u2728, mathematical: \u2211\u222b\u221a, currency: \u20ac\u00a5\u20b9)",
-      "Maintains formatting codes structure (markdown: **bold**, _italic_, `code`; HTML: <tag>)",
-      "Identifies and reports any characters that cannot be processed or decoded"
+      "All meals are vegetarian, gluten-free, and nut-free with no cross-contamination risks",
+      "Meal plan provides adequate protein (approximately 1.6-2.2g per kg body weight) to support muscle gain",
+      "Meal plan is structured as a single day with breakfast, lunch, dinner, and snacks",
+      "Meals are realistic, practical, and concise without excessive detail"
     ],
-    "task_description": "",
-    "scenario": "Testing with special characters, unicode symbols, and formatting codes to ensure proper parsing and handling of edge cases"
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete based on their height, weight, and dietary restrictions",
+    "scenario": "Testing with an athlete having multiple dietary restrictions (vegetarian + gluten-free + nut allergy) to verify the meal plan accommodates all constraints simultaneously while maintaining adequate athletic nutrition"
   }
 ]
