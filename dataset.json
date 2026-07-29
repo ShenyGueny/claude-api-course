@@ -1,32 +1,53 @@
 [
   {
-    "prompt_inputs": {},
+    "prompt_inputs": {
+      "content": "This study employs a novel CRISPR-Cas9 multiplexing approach to investigate epigenetic modifications in heterochromatin regions. We utilized chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) to map H3K9me3 and H3K27me3 histone marks across the genome. Our findings reveal that DNA methyltransferase (DNMT) inhibition significantly reduces heterochromatin spreading through altered nucleosome positioning. Additionally, we integrated RNA-seq data with ATAC-seq analysis to assess chromatin accessibility changes, discovering that PRC2 complex mutations correlate with increased transcriptional variance in developmental genes. These results suggest a mechanistic link between DNA methylation, histone modifications, and three-dimensional chromatin architecture in regulating gene silencing pathways."
+    },
     "solution_criteria": [
-      "Handles input without errors or timeouts",
-      "Maintains output quality and coherence despite input complexity"
+      "Extracts domain-specific terminology and techniques (e.g., CRISPR-Cas9, ChIP-seq, ATAC-seq, RNA-seq)",
+      "Identifies specialized molecular biology topics and molecular mechanisms (e.g., epigenetic modifications, heterochromatin, histone marks, chromatin accessibility)",
+      "Captures acronyms and their conceptual topics (e.g., DNMT, PRC2, H3K9me3, H3K27me3)",
+      "Returns results as a valid JSON array of strings"
     ],
-    "task_description": "",
-    "scenario": "Testing with extremely long or complex input strings to assess performance and output quality under stress conditions"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a highly technical passage containing domain-specific jargon, acronyms, and specialized terminology to assess handling of field-specific topics"
   },
   {
-    "prompt_inputs": {},
+    "prompt_inputs": {
+      "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in correcting mutations associated with sickle cell disease in patient-derived hematopoietic stem cells. The technique involves precise excision of mutated \u03b2-globin sequences and subsequent insertion of corrected genetic material, resulting in restored hemoglobin production. Clinical trials have shown sustained engraftment rates exceeding 90%, with patients experiencing significant reduction in vaso-occlusive crises and transfusion dependency. However, off-target editing effects remain a critical concern, as unintended DNA modifications in non-target genomic regions could introduce secondary mutations. Regulatory frameworks governing therapeutic genome modification continue to evolve, reflecting ongoing debates about safety thresholds and equitable access to treatment."
+    },
     "solution_criteria": [
-      "System handles empty/null inputs gracefully without crashing",
-      "Provides clear error message or default behavior when no input is provided",
-      "Returns a valid response structure even with missing data"
+      "Extracts all explicitly mentioned topics (CRISPR-Cas9, gene editing, sickle cell disease, hemoglobin production, clinical trials, off-target effects, regulatory frameworks)",
+      "Identifies implicit/inferred topics derived from context (genetic medicine, therapeutic applications, patient outcomes, safety concerns, healthcare equity)",
+      "Formats output as a valid JSON array of strings",
+      "Avoids including overly general terms while capturing substantive domain-specific concepts"
     ],
-    "task_description": "",
-    "scenario": "Testing with empty or null input values to verify error handling and default behavior"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing implicit and explicit topics where some topics require inference from context rather than direct mention"
   },
   {
-    "prompt_inputs": {},
+    "prompt_inputs": {
+      "content": "This study employs a mixed-methods approach integrating quantitative survey data with qualitative ethnographic observation to examine social capital formation in post-industrial communities. Drawing on Bourdieu's theory of cultural reproduction and Coleman's rational choice framework, we analyze how institutional trust, bridging social networks, and symbolic capital interact to influence civic participation. Our multilevel regression models reveal significant variance at both individual and community levels, while thematic coding of interview transcripts identifies mechanisms through which economic precarity shapes bonding versus bridging ties. These findings contribute to contemporary debates in economic sociology and urban studies regarding the relationship between deindustrialization, community resilience, and the reproduction of social inequality across generations."
+    },
     "solution_criteria": [
-      "Correctly parses and preserves all special characters (!, @, #, $, %, ^, &, *)",
-      "Handles Unicode symbols properly (\u00e9mojis: \ud83c\udfaf\ud83d\udcca\u2728, mathematical: \u2211\u222b\u221a, currency: \u20ac\u00a5\u20b9)",
-      "Maintains formatting codes structure (markdown: **bold**, _italic_, `code`; HTML: <tag>)",
-      "Identifies and reports any characters that cannot be processed or decoded"
+      "Captures major theoretical frameworks (Bourdieu, Coleman, social capital theory)",
+      "Identifies methodological approaches (mixed-methods, quantitative, qualitative, ethnography)",
+      "Includes key concepts and variables (institutional trust, social networks, civic participation, economic precarity)",
+      "Recognizes interdisciplinary fields (economic sociology, urban studies)"
     ],
-    "task_description": "",
-    "scenario": "Testing with special characters, unicode symbols, and formatting codes to ensure proper parsing and handling of edge cases"
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage from social sciences that includes abstract concepts, methodologies, and interdisciplinary references to evaluate topic granularity"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study examines neuroplasticity in the context of cognitive rehabilitation following traumatic brain injury (TBI). We investigate how neuroplasticity mechanisms\u2014including synaptic reorganization, axonal sprouting, and dendritic remodeling\u2014facilitate recovery of executive function in TBI patients. Our findings demonstrate that intensive cognitive training leverages neuroplasticity to restore prefrontal cortex function, while simultaneously engaging compensatory neural pathways in the parietal lobe. We also explore how pharmacological interventions targeting brain-derived neurotrophic factor (BDNF) enhance neuroplasticity-dependent recovery. The interplay between cognitive rehabilitation intensity, neuroplasticity capacity, and individual genetic factors (BDNF polymorphisms) determines functional outcomes. Additionally, we address how age-related decline in neuroplasticity affects rehabilitation efficacy in older TBI populations."
+    },
+    "solution_criteria": [
+      "Distinguishes between main themes (neuroplasticity, cognitive rehabilitation, TBI recovery) and sub-themes (synaptic reorganization, executive function, BDNF, age-related factors)",
+      "Avoids redundant or overly granular topic extraction while capturing hierarchically related concepts",
+      "Identifies topics at appropriate levels of abstraction without conflating distinct but related concepts"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+    "scenario": "Testing with a passage containing overlapping or hierarchical topics where main themes and sub-themes are intermingled to evaluate topic distinction and organization"
   }
 ]

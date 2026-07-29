@@ -1,0 +1,73 @@
+[
+  {
+    "output": "```json\n[\"CRISPR-Cas9 gene editing\", \"sickle cell disease\", \"hematopoietic stem cells\", \"\u03b2-globin mutation correction\", \"hemoglobin production\", \"clinical trials\", \"engraftment rates\", \"vaso-occlusive crises\", \"transfusion dependency\", \"off-target editing effects\", \"genome modification\", \"regulatory frameworks\", \"treatment access\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in CRISPR-Cas9 gene editing have demonstrated remarkable efficacy in correcting mutations associated with sickle cell disease in patient-derived hematopoietic stem cells. The technique involves precise excision of mutated \u03b2-globin sequences and subsequent insertion of corrected genetic material, resulting in restored hemoglobin production. Clinical trials have shown sustained engraftment rates exceeding 90%, with patients experiencing significant reduction in vaso-occlusive crises and transfusion dependency. However, off-target editing effects remain a critical concern, as unintended DNA modifications in non-target genomic regions could introduce secondary mutations. Regulatory frameworks governing therapeutic genome modification continue to evolve, reflecting ongoing debates about safety thresholds and equitable access to treatment."
+      },
+      "solution_criteria": [
+        "Extracts all explicitly mentioned topics (CRISPR-Cas9, gene editing, sickle cell disease, hemoglobin production, clinical trials, off-target effects, regulatory frameworks)",
+        "Identifies implicit/inferred topics derived from context (genetic medicine, therapeutic applications, patient outcomes, safety concerns, healthcare equity)",
+        "Formats output as a valid JSON array of strings",
+        "Avoids including overly general terms while capturing substantive domain-specific concepts"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a passage containing implicit and explicit topics where some topics require inference from context rather than direct mention"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extra commentary. However, it falls short on the secondary criteria regarding implicit/inferred topics. The passage explicitly discusses 'safety thresholds' and 'equitable access to treatment' in the final sentence, which should be captured as topics. Additionally, the criteria specifically request identification of implicit topics like 'safety concerns,' 'patient outcomes,' 'therapeutic applications,' and 'healthcare equity,' which are contextually present but not extracted. The solution captures approximately 70% of the substantive topics but misses important thematic elements that constitute meaningful topics in the scholarly context."
+  },
+  {
+    "output": "```json\n[\"social capital formation\", \"post-industrial communities\", \"cultural reproduction\", \"rational choice framework\", \"institutional trust\", \"bridging social networks\", \"symbolic capital\", \"civic participation\", \"multilevel regression models\", \"bonding ties\", \"economic sociology\", \"urban studies\", \"deindustrialization\", \"community resilience\", \"social inequality\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study employs a mixed-methods approach integrating quantitative survey data with qualitative ethnographic observation to examine social capital formation in post-industrial communities. Drawing on Bourdieu's theory of cultural reproduction and Coleman's rational choice framework, we analyze how institutional trust, bridging social networks, and symbolic capital interact to influence civic participation. Our multilevel regression models reveal significant variance at both individual and community levels, while thematic coding of interview transcripts identifies mechanisms through which economic precarity shapes bonding versus bridging ties. These findings contribute to contemporary debates in economic sociology and urban studies regarding the relationship between deindustrialization, community resilience, and the reproduction of social inequality across generations."
+      },
+      "solution_criteria": [
+        "Captures major theoretical frameworks (Bourdieu, Coleman, social capital theory)",
+        "Identifies methodological approaches (mixed-methods, quantitative, qualitative, ethnography)",
+        "Includes key concepts and variables (institutional trust, social networks, civic participation, economic precarity)",
+        "Recognizes interdisciplinary fields (economic sociology, urban studies)"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a passage from social sciences that includes abstract concepts, methodologies, and interdisciplinary references to evaluate topic granularity"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. It performs well on secondary criteria by capturing most major concepts, theoretical frameworks, and interdisciplinary fields. However, it has notable gaps in methodological approaches (missing explicit terms like 'mixed-methods', 'quantitative', 'qualitative', 'ethnography', 'thematic coding') and omits 'economic precarity', which is explicitly mentioned as a key variable. The inclusion of theorist names as topics is debatable but would strengthen alignment with the 'major theoretical frameworks' criterion."
+  },
+  {
+    "output": "```json\n[\"CRISPR-Cas9 multiplexing\", \"epigenetic modifications\", \"heterochromatin\", \"chromatin immunoprecipitation\", \"ChIP-seq\", \"histone marks\", \"H3K9me3\", \"H3K27me3\", \"DNA methyltransferase inhibition\", \"nucleosome positioning\", \"RNA-seq\", \"ATAC-seq\", \"chromatin accessibility\", \"PRC2 complex mutations\", \"transcriptional variance\", \"developmental genes\", \"DNA methylation\", \"three-dimensional chromatin architecture\", \"gene silencing pathways\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study employs a novel CRISPR-Cas9 multiplexing approach to investigate epigenetic modifications in heterochromatin regions. We utilized chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) to map H3K9me3 and H3K27me3 histone marks across the genome. Our findings reveal that DNA methyltransferase (DNMT) inhibition significantly reduces heterochromatin spreading through altered nucleosome positioning. Additionally, we integrated RNA-seq data with ATAC-seq analysis to assess chromatin accessibility changes, discovering that PRC2 complex mutations correlate with increased transcriptional variance in developmental genes. These results suggest a mechanistic link between DNA methylation, histone modifications, and three-dimensional chromatin architecture in regulating gene silencing pathways."
+      },
+      "solution_criteria": [
+        "Extracts domain-specific terminology and techniques (e.g., CRISPR-Cas9, ChIP-seq, ATAC-seq, RNA-seq)",
+        "Identifies specialized molecular biology topics and molecular mechanisms (e.g., epigenetic modifications, heterochromatin, histone marks, chromatin accessibility)",
+        "Captures acronyms and their conceptual topics (e.g., DNMT, PRC2, H3K9me3, H3K27me3)",
+        "Returns results as a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a highly technical passage containing domain-specific jargon, acronyms, and specialized terminology to assess handling of field-specific topics"
+    },
+    "score": 10,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it returns a valid JSON array of strings containing topics from the passage, with no extra commentary, and the response contains only the JSON array. It excels at the secondary criteria by extracting domain-specific terminology, techniques, molecular mechanisms, and acronyms comprehensively. The extraction is thorough and accurate, capturing 19 distinct topics that represent the key concepts discussed in the scholarly article. While there is minor redundancy between related concepts, this does not violate any stated criteria and reflects the interconnected nature of the topics in the source material."
+  },
+  {
+    "output": "```json\n[\"neuroplasticity\", \"cognitive rehabilitation\", \"traumatic brain injury\", \"synaptic reorganization\", \"axonal sprouting\", \"dendritic remodeling\", \"executive function\", \"prefrontal cortex\", \"parietal lobe\", \"brain-derived neurotrophic factor\", \"pharmacological interventions\", \"cognitive training\", \"compensatory neural pathways\", \"BDNF polymorphisms\", \"genetic factors\", \"age-related decline\", \"rehabilitation efficacy\"]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study examines neuroplasticity in the context of cognitive rehabilitation following traumatic brain injury (TBI). We investigate how neuroplasticity mechanisms\u2014including synaptic reorganization, axonal sprouting, and dendritic remodeling\u2014facilitate recovery of executive function in TBI patients. Our findings demonstrate that intensive cognitive training leverages neuroplasticity to restore prefrontal cortex function, while simultaneously engaging compensatory neural pathways in the parietal lobe. We also explore how pharmacological interventions targeting brain-derived neurotrophic factor (BDNF) enhance neuroplasticity-dependent recovery. The interplay between cognitive rehabilitation intensity, neuroplasticity capacity, and individual genetic factors (BDNF polymorphisms) determines functional outcomes. Additionally, we address how age-related decline in neuroplasticity affects rehabilitation efficacy in older TBI populations."
+      },
+      "solution_criteria": [
+        "Distinguishes between main themes (neuroplasticity, cognitive rehabilitation, TBI recovery) and sub-themes (synaptic reorganization, executive function, BDNF, age-related factors)",
+        "Avoids redundant or overly granular topic extraction while capturing hierarchically related concepts",
+        "Identifies topics at appropriate levels of abstraction without conflating distinct but related concepts"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings",
+      "scenario": "Testing with a passage containing overlapping or hierarchical topics where main themes and sub-themes are intermingled to evaluate topic distinction and organization"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all mandatory requirements with a properly formatted JSON array containing only clean topic strings. It demonstrates strong comprehension of the passage content and captures the essential topics across multiple levels of abstraction. However, it has minor deficiencies in the secondary criteria regarding hierarchy distinction and some redundancy between related concepts (BDNF polymorphisms vs. genetic factors, cognitive training vs. cognitive rehabilitation). These are not critical flaws\u2014the solution appropriately avoids over-granularity while maintaining comprehensive coverage\u2014but they prevent a perfect score."
+  }
+]
